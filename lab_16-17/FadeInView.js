@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Animated, Text, View, Easing } from 'react-native';
+import { Animated, Text, Easing } from 'react-native';
 
 const FadeInView = ({ text }) => {
   const scaleAnim = new Animated.Value(1);
