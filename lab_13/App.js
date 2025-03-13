@@ -1,30 +1,37 @@
-import { Text, SafeAreaView, StyleSheet, Image } from 'react-native';
+import { Text, SafeAreaView, StyleSheet, Image, View } from 'react-native';
 import { Card } from 'react-native-paper';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.paragraph}>
-        Журнал Bright
+        Экобиот
       </Text>
       <Card style={styles.card}>
         <Text style={{ marginBottom: 30, color: 'blue' }} onPress={() => Linking.openURL('http://google.com')}>
           Новости
         </Text>
-        <Image style={styles.img}
-          source={{
-            uri: 'https://cdn.sanity.io/images/uqxwe2qj/production/4ee9fb18bdc214aefebf7859557a6611125c3841-760x426.png?q=80&auto=format&fit=clip&w=760',
-          }}>
-        </Image>
         <Text style={styles.title}>
-          Превращаем стресс в твоего помощника
+          Технологии для здоровья человека
         </Text>
         <Text style={{ fontSize: 16 }}>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
-          took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-          but also the leap into electronic typesetting.
+          Проект "Интерактивная карта" химического состава локальных продуктов питания
+          <br></br>
+          добываемых посредниками самостоятельно.
         </Text>
+        <Image style={styles.img}
+          source={{
+            uri: 'https://primamediamts.servicecdn.ru/f/big/482/481143.jpg?df9015093f7bfa68375d11cba980a31c',
+          }}>
+        </Image>
+        <View style={{ flex: 3, backgroundColor: 'grey' }}>
+          <Text style={{ fontSize: 14, textAlign: 'center' }}>
+            Руководитель: Сорокина Татьяна Юрьевна
+          </Text>
+          <Text style={{ fontSize: 14, textAlign: 'center' }}>
+            Тимлид от команды разработчиков ПО: <br></br> Выговская Наталья Владимировна
+          </Text>
+        </View>
       </Card>
     </SafeAreaView>
   );

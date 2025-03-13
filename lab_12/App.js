@@ -4,7 +4,7 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <Text style={styles.paragraph}>
-        Hello world!
+        Технологии для здоровья человека
       </Text>
     </SafeAreaView>
   );
